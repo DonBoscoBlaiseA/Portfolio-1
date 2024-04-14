@@ -13,7 +13,8 @@ var pw = false;
 setTimeout(function() {
     addLine('<br><br><pre class="tab">Welcome to Don Bosco Blaise\' Portfolio</pre><br>', "color2", 80);
     addLine('<pre class="tab2">For a list of available commands, type <span class=\"command2\">"help"</span><span class=\"color2\">.</span></pre><br><br>', "color2", 80);
-    addLine('<pre class="tab3">!!!!WEBSITE IS UNDER DEVELOPMENT, AUTO-SCROLL DOESN\'T WORK, SCROLL USING MOUSE!!!!</pre>', "color2", 80);
+    addLine('<pre class="tab3">!!!!WEBSITE IS UNDER DEVELOPMENT, AUTO-SCROLL DOESN\'T WORK, SCROLL USING MOUSE!!!!</pre><br><br>', "color2", 80);
+    addLine('<pre class="tab3">!!!!KINDLY VIEW THIS SITE ON PC OR LAPTOP, IT MIGHT BE UNSTABLE ON MOBILE DEVICES!!!!</pre>', "color2", 80);
     textarea.focus();
 }, 0);
 
