@@ -1,0 +1,50 @@
+.pop-up{
+    font-family: monospace, Arial;
+    background-color: rgb(0, 0, 0);
+    width: 450px;
+    height: 150px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-style:groove;
+    border-width: 5px;
+    border-color: white;
+    display: none;
+    /* border-radius: 8px; */
+}
+#bar{
+    position: absolute;
+    display: inline-flexbox;
+}
+#info{
+    display: block;
+    color: rgb(255, 255, 255);
+    /* position: relative; */
+    padding-top: 0;
+    
+}
+#sub-info{
+    padding-top: 15%;
+}
+#close{
+    cursor: pointer;
+    margin-top: -60px;
+    left: 110px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-left: 94%;
+    /* border-radius: 10px; */
+    background-color: #b10505a9;
+}
+#condition{
+    color: rgb(243, 255, 77);
+}
+#do{
+    color: rgb(105, 233, 255);
+}
+#true{
+    color: rgb(236, 57, 57);
+}

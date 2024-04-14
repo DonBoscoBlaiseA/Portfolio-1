@@ -1,0 +1,49 @@
+.outside{
+    padding-left: 50px;
+    position: absolute;
+    margin: 20px 10px;
+}
+.images{
+    overflow-y: none;
+}
+.screen{
+    margin: 0;
+    padding: 0;
+    font-family: monospace, Arial;
+    /* font-weight: bold; */
+    font-style: normal;
+    overflow: scroll;
+    background-color: green;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.screen::-webkit-scrollbar{
+    display: none;
+}
+.frame{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 2;
+    box-shadow: 50px 50px 4px rgba(0, 0, 0, 0.5);
+}
+.tab{
+    position: absolute;
+    padding-left: 5%;
+    /* padding-top: 3%; */
+}
+.tab2{
+    color: greenyellow;
+    position: absolute;
+    padding-left: 5%;
+}
+.tab3{
+    color: red;
+    position: absolute;
+    padding-left: 5%;
+}
+.abtme{
+    color: rgb(95, 186, 247);
+}

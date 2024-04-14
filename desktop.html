@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,374;1,374&family=VT323&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+        <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="message.css"/>
+        <link rel="stylesheet" type="text/css" href="animation.css"/>
+        <link rel="stylesheet" type="text/css" href="desktop.css"/>
+        <link rel="icon" type="image/x-icon" href="#"/>
+    </head>
+    <body>
+        <div class="pop-up">
+            <div id="bar">
+                <h3 id="info">website-under-development == <span id="true">true</span></h3>
+                <button id="close">X</button>
+            </div>
+            <p id="sub-info"><span id="condition">if(auto-scroll != work)</span> <span id="do">{ use mouse scroll; }</span></p>
+        </div>
+        <div class="outside"></div>
+        <section class="images">
+            <img src="images/scanlines.png" class="frame" style="opacity: 50%;"/>
+            <!-- <img src="images/monitor.png" class="frame"/> -->
+            <img src="images/bezel.png" class="frame"/>
+        </section>
+        <div class="screen" id="screen">
+            <div id="terminal">
+                <a id="before"></a>
+            </div>
+            <div id="command" class="content" onclick="$('texter').focus();">
+                <div class="text-adjust">
+                <textarea type="text" id="texter" class="outside" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); 
+                   moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" placeholder="tap here to give commands" autofocus></textarea>
+                </div>
+                <div id="liner">
+                    <span id="typer"></span><b class="cursor" id="cursor">█</b>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("load", function(){
+                setTimeout(
+                    function open(event){
+                        document.querySelector(".pop-up").style.display="block";
+                    }, 1000
+                )
+            });
+            
+            document.querySelector("#close").addEventListener("click", function(){
+                document.querySelector(".pop-up").style.display="none";
+            });
+        </script>
+        <script src="caret.js"></script>
+        <script src="commands.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
