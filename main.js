@@ -70,13 +70,14 @@ function commander(cmd) {
             addLine('<br><br><pre class="tab">Redirecting to Github...</pre>', "color2", 80);
             newTab('https://github.com/DonBoscoBlaiseA/');
             break;
+        case "leetcode":
+            addLine('<br><br><pre class="tab">Redirecting to Hackerrank...</pre>', "color2", 80);
+            newTab('https://leetcode.com/u/Blaise_511/');
+            break;
         case "hackerrank":
             addLine('<br><br><pre class="tab">Redirecting to Hackerrank...</pre>', "color2", 80);
             newTab('https://www.hackerrank.com/profile/Blaise_511/');
             break;
-        // case "projects":
-        // loopLines(projects, "color2 margin", 80);
-        // break;
         case "clear":
             setTimeout(function() {
                 terminal.innerHTML = '<a id="before"></a>';
