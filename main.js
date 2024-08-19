@@ -71,7 +71,7 @@ function commander(cmd) {
             newTab('https://github.com/DonBoscoBlaiseA/');
             break;
         case "leetcode":
-            addLine('<br><br><pre class="tab">Redirecting to Hackerrank...</pre>', "color2", 80);
+            addLine('<br><br><pre class="tab">Redirecting to Leetcode...</pre>', "color2", 80);
             newTab('https://leetcode.com/u/Blaise_511/');
             break;
         case "hackerrank":
