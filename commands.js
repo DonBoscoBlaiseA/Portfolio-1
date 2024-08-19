@@ -37,6 +37,7 @@ help = [
   '<pre class="tab"><span class="command">aboutme</span>       - Know more about me!</pre><br>',
   '<pre class="tab"><span class="command">linkedin</span>       - Display Linkedin profile</pre><br>',
   '<pre class="tab"><span class="command">github</span>         - Display Github profile</pre><br>',
+  '<pre class="tab"><span class="command">leetcode</span>     - Display Leetcode profile</pre><br>',
   '<pre class="tab"><span class="command">hackerrank</span>     - Display Hackerrank profile</pre><br>',
 //   '<pre class="tab"><span class="command">projects</span>       - View my projects</pre><br>',
   '<pre class="tab"><span class="command">clear</span>          - Clears terminal</pre><br>',
